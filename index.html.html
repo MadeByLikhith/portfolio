@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Likhith Sanjeev | Portfolio</title>
+<style>
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:#e5e7eb;
+  background:
+    radial-gradient(circle at top right, rgba(124,58,237,.25), transparent 35%),
+    radial-gradient(circle at top left, rgba(37,99,235,.25), transparent 35%),
+    linear-gradient(135deg,#0f172a,#111827 40%,#1f2937);
+}
+nav{
+  position:sticky; top:0; z-index:1000;
+  backdrop-filter: blur(12px);
+  background: rgba(15,23,42,.75);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.nav-wrap{
+  max-width:1100px; margin:auto; padding:14px 20px;
+  display:flex; gap:10px; flex-wrap:wrap; justify-content:center;
+}
+.nav-btn{
+  color:#dbeafe; text-decoration:none; padding:10px 16px;
+  border-radius:999px; border:1px solid rgba(255,255,255,.08);
+  background:rgba(255,255,255,.04);
+  transition:.3s;
+}
+.nav-btn:hover{transform:translateY(-2px); background:rgba(59,130,246,.15)}
+.container{max-width:1100px;margin:auto;padding:0 24px}
+section{padding:60px 0}
+.hero{min-height:100vh; display:flex; align-items:center}
+.card{
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:28px;
+  padding:32px;
+  backdrop-filter: blur(14px);
+  box-shadow:0 10px 40px rgba(0,0,0,.25);
+  animation: fadeUp .8s ease both;
+}
+.hero-card{padding:56px}
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(30px)}
+  to{opacity:1; transform:translateY(0)}
+}
+h1{
+  font-size:clamp(44px,8vw,84px);
+  margin:12px 0;
+  line-height:1.05;
+}
+.gradient{
+  background:linear-gradient(90deg,#60a5fa,#a78bfa,#34d399);
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+}
+h2{font-size:2.2rem; margin-top:0}
+h3{margin-top:0}
+.subtitle{font-size:1.2rem; color:#cbd5e1}
+.badge{
+  display:inline-block; padding:8px 14px; border-radius:999px;
+  background:rgba(59,130,246,.15); color:#93c5fd;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:24px;
+}
+.tags{display:flex; flex-wrap:wrap; gap:10px}
+.tag{
+  padding:8px 14px; border-radius:999px;
+  background:rgba(59,130,246,.12); color:#bfdbfe;
+  border:1px solid rgba(59,130,246,.18);
+}
+.btn{
+  display:inline-block; margin:8px 10px 0 0; padding:12px 20px;
+  border-radius:14px; text-decoration:none; font-weight:600;
+  transition:.3s;
+}
+.btn-primary{
+  background:linear-gradient(90deg,#2563eb,#7c3aed);
+  color:white;
+}
+.btn-secondary{
+  color:#e5e7eb;
+  border:1px solid rgba(255,255,255,.1);
+  background:rgba(255,255,255,.04);
+}
+.btn:hover{transform:translateY(-3px) scale(1.02)}
+a{color:#93c5fd}
+footer{
+  text-align:center; padding:30px 20px; color:#94a3b8;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-wrap">
+    <a class="nav-btn" href="#about">About</a>
+    <a class="nav-btn" href="#education">Education</a>
+    <a class="nav-btn" href="#skills">Skills</a>
+    <a class="nav-btn" href="#projects">Projects</a>
+    <a class="nav-btn" href="#certifications">Certifications</a>
+    <a class="nav-btn" href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="container">
+  <section class="hero" id="home">
+    <div class="card hero-card">
+      <span class="badge">🚀 Open to Opportunities</span>
+      <h1>Likhith <span class="gradient">Sanjeev</span></h1>
+      <p class="subtitle">Frontend Developer and Computer Science student passionate about creating beautiful, user-friendly web applications.</p>
+      <p>📧 <a href="mailto:ponnalikhith06@gmail.com">ponnalikhith06@gmail.com</a><br>
+         📱 <a href="tel:+918639151489">+91 8639151489</a></p>
+      <a class="btn btn-primary" href="mailto:ponnalikhith06@gmail.com">Contact Me</a>
+      <a class="btn btn-secondary" href="https://www.linkedin.com/in/likhith-ponna-0b84533bb/" target="_blank">LinkedIn</a>
+      <a class="btn btn-secondary" href="https://github.com/MadeByLikhith" target="_blank">GitHub</a>
+      <a class="btn btn-secondary" href="#projects">View Projects</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="card">
+      <h2>About Me</h2>
+      <p>Looking forward to boosting my skills and working for a leading MNC while contributing to innovative real-world projects. I enjoy building intuitive digital experiences and continuously learning modern technologies.</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="grid">
+      <div class="card">
+        <h2>Education</h2>
+        <p><strong>Vignan's Institute of Information Technology</strong><br>
+        B.Tech in Computer Science<br>
+        CGPA: 9.1/10<br>
+        Graduation Year: 2028</p>
+      </div>
+      <div class="card">
+        <h2>Internship</h2>
+        <p><strong>Thiranex</strong><br>
+        Full Stack Developer Intern (1 Month)</p>
+        <p>Worked on building real-time projects and gained hands-on development experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="card">
+      <h2>Skills</h2>
+      <div class="tags">
+        <span class="tag">C</span><span class="tag">Java</span><span class="tag">Python</span>
+        <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+        <span class="tag">MongoDB</span><span class="tag">Git</span><span class="tag">GitHub</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="grid">
+      <div class="card">
+        <h2>SkillNest</h2>
+        <p>User-friendly online marketplace for local artisans and homemakers to sell handmade crafts.</p>
+        <p><strong>Tech:</strong> HTML, CSS, JavaScript, MongoDB</p>
+      </div>
+      <div class="card">
+        <h2>YouTube Study Mode</h2>
+        <p>Chrome extension that hides distracting recommendations and comments, with built-in note-taking and download functionality.</p>
+        <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <div class="grid">
+      <div class="card">
+        <h2>Certifications</h2>
+        <ul>
+          <li>IBM SkillsBuild</li>
+          <li>Cisco Programming Certifications</li>
+          <li>Google SkillUp</li>
+          <li>TATA GenAI, Data Visualization & ESG</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Achievement</h2>
+        <p>🏆 Hackathon Finalist</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="card">
+      <h2>Contact Details</h2>
+      <p><strong>Name:</strong> Likhith Sanjeev</p>
+      <p><strong>Email:</strong> <a href="mailto:ponnalikhith06@gmail.com">ponnalikhith06@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+918639151489">+91 8639151489</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/likhith-ponna-0b84533bb/" target="_blank">View Profile</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/MadeByLikhith" target="_blank">MadeByLikhith</a></p>
+      <a class="btn btn-primary" href="mailto:ponnalikhith06@gmail.com">Send Email</a>
+      <a class="btn btn-secondary" href="#home">Back to Top</a>
+    </div>
+  </section>
+</div>
+
+<footer>© 2026 Likhith Sanjeev • Designed with HTML, CSS & JavaScript</footer>
+</body>
+</html>
